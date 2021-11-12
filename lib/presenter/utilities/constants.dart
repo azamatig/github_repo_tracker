@@ -4,7 +4,8 @@ Widget nameStyle(
   String text,
 ) {
   return Text(
-    text,
+    text.split('/').last,
+    overflow: TextOverflow.ellipsis,
     style: const TextStyle(
         fontSize: 18, color: Colors.white, fontWeight: FontWeight.w700),
   );

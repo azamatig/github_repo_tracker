@@ -40,11 +40,14 @@ class GitRepoListItem extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(bottom: 8.0),
-                        child: nameStyle(repo.owner.login),
+                        child: SizedBox(
+                            height: 25,
+                            width: 240,
+                            child: nameStyle(repo.fullName)),
                       ),
                       SizedBox(
                         width: 240,
-                        height: 50,
+                        height: 65,
                         child: Text(
                           repo.description,
                           textAlign: TextAlign.start,
